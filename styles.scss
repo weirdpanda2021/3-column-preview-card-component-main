@@ -1,0 +1,132 @@
+$background1: hsl(31, 77%, 52%);
+$background2: hsl(184, 100%, 22%);
+$background3: hsl(179, 100%, 13%);
+$background-attr: hsl(0, 0%, 82%);
+$p-color: hsla(0, 0%, 100%, 0.75);
+$backgr-headi-btn: hsl(0, 0%, 95%);
+$font-fam1: 'Big Shoulders Display', cursive;
+$font-fam2: 'Lexend Deca', sans-serif;
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#container {
+    margin-top: auto;
+    width: 80vw;
+    // height: 40vw;
+    height: fit-content;
+    border-radius: 0.9rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div.box {
+    padding: 3vw 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    img {
+        width: 5vw;
+        height: auto;
+    }
+    .title {
+        font-family: $font-fam1;
+        color: $backgr-headi-btn;
+        font-size: 3vw;
+        text-transform: uppercase;
+    }
+    .content {
+        font-family: $font-fam2;
+        color: $p-color;
+        line-height: 2.7vw;
+        font-size: 1.35vw;
+    }
+    button {
+        background-color: transparent;
+        border-radius: 2em;
+        width: 10vw;
+        border-color: $backgr-headi-btn;
+        color: $backgr-headi-btn;
+        padding: 0.95em;
+        font-size: 1.1vw;
+        margin-top: 3vw;
+    }
+}
+#box1 {
+    background-color: $background1;
+    button:hover {
+        background-color: $backgr-headi-btn;
+        color: $background1;
+    }
+}
+#box2 {
+    background-color: $background2;
+    button:hover {
+        background-color: $backgr-headi-btn;
+        color: $background2;
+    }
+}
+#box3 {
+    background-color: $background3;
+    button:hover {
+        background-color: $backgr-headi-btn;
+        color: $background3;
+    }
+}
+div.attribution {
+    margin-top: 1.2vw;
+    font-size: 1.5vw;
+    justify-self: flex-end;
+    background-color: $background-attr;
+    display: block;
+    font-family: $font-fam2;
+}
+button:hover {
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:700px){
+    #container {
+        width: 80vw;
+        height: fit-content;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    div.box {
+        padding: 10vw 6vw;
+        img {
+            width: 15vw;
+            height: auto;
+        }
+        .title {
+            font-family: $font-fam1;
+            color: $backgr-headi-btn;
+            font-size: 10vw;
+        }
+        .content {
+            font-family: $font-fam2;
+            color: $p-color;
+            font-size: 3.5vw;
+            line-height: 7vw;
+        }
+        button {
+            background-color: transparent;
+            border-radius: 2em;
+            width: 33vw;
+            border-color: $backgr-headi-btn;
+            color: $backgr-headi-btn;
+            padding: 0.6em;
+            font-size: 4vw;
+        }
+        
+    }
+    div.attribution {
+        font-size: 3.5vw;
+    }
+}

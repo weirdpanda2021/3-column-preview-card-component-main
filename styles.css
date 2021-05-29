@@ -1,0 +1,165 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container {
+  margin-top: auto;
+  width: 80vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 0.9rem;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.box {
+  padding: 3vw 3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+div.box img {
+  width: 5vw;
+  height: auto;
+}
+
+div.box .title {
+  font-family: "Big Shoulders Display", cursive;
+  color: #f2f2f2;
+  font-size: 3vw;
+  text-transform: uppercase;
+}
+
+div.box .content {
+  font-family: "Lexend Deca", sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 2.7vw;
+  font-size: 1.35vw;
+}
+
+div.box button {
+  background-color: transparent;
+  border-radius: 2em;
+  width: 10vw;
+  border-color: #f2f2f2;
+  color: #f2f2f2;
+  padding: 0.95em;
+  font-size: 1.1vw;
+  margin-top: 3vw;
+}
+
+#box1 {
+  background-color: #e38826;
+}
+
+#box1 button:hover {
+  background-color: #f2f2f2;
+  color: #e38826;
+}
+
+#box2 {
+  background-color: #006970;
+}
+
+#box2 button:hover {
+  background-color: #f2f2f2;
+  color: #006970;
+}
+
+#box3 {
+  background-color: #004241;
+}
+
+#box3 button:hover {
+  background-color: #f2f2f2;
+  color: #004241;
+}
+
+div.attribution {
+  margin-top: 1.2vw;
+  font-size: 1.5vw;
+  justify-self: flex-end;
+  background-color: #d1d1d1;
+  display: block;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  #container {
+    width: 80vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    border-radius: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  div.box {
+    padding: 10vw 6vw;
+  }
+  div.box img {
+    width: 15vw;
+    height: auto;
+  }
+  div.box .title {
+    font-family: "Big Shoulders Display", cursive;
+    color: #f2f2f2;
+    font-size: 10vw;
+  }
+  div.box .content {
+    font-family: "Lexend Deca", sans-serif;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 3.5vw;
+    line-height: 7vw;
+  }
+  div.box button {
+    background-color: transparent;
+    border-radius: 2em;
+    width: 33vw;
+    border-color: #f2f2f2;
+    color: #f2f2f2;
+    padding: 0.6em;
+    font-size: 4vw;
+  }
+  div.attribution {
+    font-size: 3.5vw;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
