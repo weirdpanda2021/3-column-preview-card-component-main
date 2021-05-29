@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-screenshot.jpg
+https://github.com/weirdpanda2021/3-column-preview-card-component-main/blob/main/screenshot.jpg
 
 ### Links
 
